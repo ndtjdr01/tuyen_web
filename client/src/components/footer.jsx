@@ -2,34 +2,34 @@ import React from 'react'
 
 export const Footer = () => {
     return (
-        <div className='w-full h-full px-4 bg-[#DDD] text-[#222] py-[50px] flex justify-between items-center'>
-            <div className='flex flex-col items-center justify-between h-full'>
-                <div className='flex flex-col text-left font-bold text-[30px] text-[#000]'>
-                    <p>BUSINESS &</p>
-                    <p>STARTUP PROJECT</p>
-                    <p className='text-[#222] text-[15px] font-medium'>Dự án Kinh doanh và Khởi nghiệp</p>
+        <div className='w-full h-full bg-[#305488] text-[#fff] flex items-center'>
+            <div className='w-1/2 h-full flex flex-col justify-around p-4 gap-8'>
+                <div className='flex gap-4'>
+                    <div className='h-[100px] w-[100px]'>
+                        <img className='h-full w-full' src="/logo.jpg" alt="" />
+                    </div>
+                    <div className='flex flex-col gap-2 font-semibold justify-between'>
+                        <p>Trường Đại học Thương Mại</p>
+                        <p>79 Đ.Hồ Tùng Mậu, Mai Dịch, Cầu Giấy, Hà Nội, Việt Nam</p>
+                        <p>0969783021 (Phong)</p>
+                    </div>
                 </div>
-                <div className='flex flex-col items-start w-full'>
-                    <p>Dream Higher</p>
-                    <p>Reach Futher</p>
-                    <p>Achieve Together</p>
-                </div>
-            </div>
-            <div className='flex flex-col items-start gap-[10px] h-full justify-end'>
-                <div className='flex items-center gap-2'>
-                    <a href="#"><i className="fa-solid fa-phone"></i></a>
-                    <a href="#">0333234234</a>
-                </div>
-                <div className='flex items-center gap-2'>
-                    <a href="#"><i className="fa-brands fa-facebook"></i></a>
-                    <a href="#">fb</a>
-                </div>
-                <div className='flex items-center gap-2'>
-                    <a href="#"><i className="fa-brands fa-square-instagram"></i></a>
-                    <a href="#">ins</a>
+                <div className='flex font-thin gap-8'>
+                    <div className='flex flex-col gap-2'>
+                        <p>Giới thiệu</p>
+                        <p>Thành Tích</p>
+                        <p>Thành Viên</p>
+                    </div>
+                    <div className='flex flex-col gap-2'>
+                        <p>Câu chuyện của chúng tôi</p>
+                        <p>Cộng đồng</p>
+                        <p>Group kết nối Khởi Nghiệp (sắp ra mắt)</p>
+                    </div>
                 </div>
             </div>
-            <img className='h-[200px] w-[200px] rounded-full' src="/logo.jpg" alt="" />
+            <div className='h-full w-1/2'>
+                <img className='footer_logo h-full w-full ' src="/logo.jpg" alt="" />
+            </div>
         </div>
     )
 }

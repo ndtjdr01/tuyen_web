@@ -18,9 +18,10 @@ function App() {
           <Nav theme={theme} setTheme={setTheme} />
         </div>
 
-        <div className='flex-1 mt-[60px] w-full' >
+        <div className='flex-1 mt-[120px] w-full' >
           <Routes>
             <Route path='/' element={<Trangchu />} />
+            <Route path='/trangchu' element={<Trangchu />} />
             <Route path='/gioithieu' element={<Gioithieu />} />
             <Route path='/sukien' element={<Sukien />} />
             <Route path='/sanpham' element={<Sanpham />} />
