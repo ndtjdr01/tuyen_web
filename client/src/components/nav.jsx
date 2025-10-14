@@ -1,6 +1,8 @@
+import { useState } from "react";
 import { Link } from "react-router-dom"
 
-export const Nav = ({ theme }) => {
+export const Nav = () => {
+    const [navActive, setNavActive] = useState(null);
     return (
         <div className="flex flex-col">
             {/* header */}
@@ -13,7 +15,7 @@ export const Nav = ({ theme }) => {
                 </div>
                 <div className="p-1 w-[180px] rounded-md bg-[#fff] flex items-center gap-2">
                     <input type="text" placeholder="Tìm kiếm" className="w-full outline-none" />
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i className="fa-solid fa-magnifying-glass"></i>
                 </div>
             </div>
 
@@ -25,23 +27,35 @@ export const Nav = ({ theme }) => {
                         <Link to="/trangchu" className="nav_item">Trang chủ</Link>
                         <i class="fa-solid fa-chevron-down"></i>
                     </div>
-                    <div className="nav_items">
+                    <div className="nav_items" onMouseEnter={() => setNavActive("gioithieu")}
+                        onMouseLeave={() => setNavActive(null)}>
                         <Link to="/gioithieu" className="nav_item">Giới thiệu</Link>
                         <i class="fa-solid fa-chevron-down"></i>
+                        {navActive === "gioithieu" && (
+                            <ul className="sub_nav">
+                                <Link to="/gioithieu/du-an" className="sub_nav-item">Dự án</Link>
+                                <Link to="/gioithieu/phong-truyen-thong" className="sub_nav-item">Phòng truyền thống</Link>
+                                <Link to="/gioithieu/thanh-tich" className="sub_nav-item">Thành tích nổi bật</Link>
+                            </ul>
+                        )}
                     </div>
-                    <div className="nav_items">
+                    <div className="nav_items" onMouseEnter={() => setNavActive("tintuc")}
+                        onMouseLeave={() => setNavActive(null)}>
                         <Link to="/tintuc" className="nav_item">Tin tức</Link>
                         <i class="fa-solid fa-chevron-down"></i>
                     </div>
-                    <div className="nav_items">
+                    <div className="nav_items" onMouseEnter={() => setNavActive("kienthuc-startup")}
+                        onMouseLeave={() => setNavActive(null)}>
                         <Link to="/kienthuc-startup" className="nav_item">Kiến thức Start-up</Link>
                         <i class="fa-solid fa-chevron-down"></i>
                     </div>
-                    <div className="nav_items">
+                    <div className="nav_items" onMouseEnter={() => setNavActive("sukien")}
+                        onMouseLeave={() => setNavActive(null)}>
                         <Link to="/sukien" className="nav_item">Sự kiện</Link>
                         <i class="fa-solid fa-chevron-down"></i>
                     </div>
-                    <div className="nav_items">
+                    <div className="nav_items" onMouseEnter={() => setNavActive("sanpham")}
+                        onMouseLeave={() => setNavActive(null)}>
                         <Link to="/sanpham" className="nav_item">Sản phẩm</Link>
                         <i class="fa-solid fa-chevron-down"></i>
                     </div>

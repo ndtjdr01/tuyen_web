@@ -1,4 +1,5 @@
 import anh1 from '../assets/anh1.jpg'
+import BackToTopButton from '../components/backToTop'
 export const Trangchu = () => {
   return (
     <div className='flex flex-col gap-8 w-full justify-center items-center p-8' >
@@ -69,7 +70,7 @@ export const Trangchu = () => {
           </div>
         </div>
       </div>
-      
+      <BackToTopButton/>
     </div>
   )
 }

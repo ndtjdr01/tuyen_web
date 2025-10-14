@@ -8,6 +8,9 @@ import { Sanpham } from './pages/sanpham'
 import { Tintuc } from './pages/tintuc'
 import { Gioithieu } from './pages/gioithieu'
 import { Footer } from './components/footer'
+import { Duan } from './pages/duan'
+import { Phongtruyenthong } from './pages/phongtruyenthong'
+import { Thanhtich } from './pages/thanhtich'
 
 function App() {
   const { theme, setTheme } = useState('light')
@@ -18,11 +21,14 @@ function App() {
           <Nav theme={theme} setTheme={setTheme} />
         </div>
 
-        <div className='flex-1 mt-[120px] w-full' >
+        <div className='flex-1 mt-[115px] w-full' >
           <Routes>
             <Route path='/' element={<Trangchu />} />
             <Route path='/trangchu' element={<Trangchu />} />
             <Route path='/gioithieu' element={<Gioithieu />} />
+            <Route path='/gioithieu/du-an' element={<Duan />} />
+            <Route path='/gioithieu/phong-truyen-thong' element={<Phongtruyenthong />} />
+            <Route path='/gioithieu/thanh-tich' element={<Thanhtich />} />
             <Route path='/sukien' element={<Sukien />} />
             <Route path='/sanpham' element={<Sanpham />} />
             <Route path='/tintuc' element={<Tintuc />} />
