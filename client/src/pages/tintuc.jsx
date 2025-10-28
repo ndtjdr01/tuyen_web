@@ -15,7 +15,7 @@ export const Tintuc = () => {
               <div className='w-full aspect-square border-2 boder-black'>
                 <img src="" alt="" />
               </div>
-              <div className='text-[14px] p-5 flex flex-col gap-3'>
+              <div className='text-[14px] p-5 flex flex-col gap-3   '>
                 <p className='text-[#305488] font-semibold text-[16px]'>Doanh nghiệp lớn là gì ?</p>
                 <p>Năm 2013 kkfsjafk daksdjask a jaj ajdksadj  jakdsdjkasj ajksajfjaksfj aj jajsjdasjkfasjf jwiqoruz,ncxz n mzxmvkjsflawkroiwqurwrq safafgsdga </p>
                 <p className='border-t-2 border-black mx-[-20px] px-5'>1/2/2025</p>
